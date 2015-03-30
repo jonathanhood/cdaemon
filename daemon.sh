@@ -32,6 +32,12 @@ case $1 in
             echo "Not Running"
         fi
         ;;
+    "status")
+        if [[ -n $PID ]]; then
+            echo "Running"
+        else
+            echo "Not Running"
+        fi
 esac
             
 
